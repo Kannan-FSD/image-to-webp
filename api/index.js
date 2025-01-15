@@ -21,7 +21,10 @@ const upload = multer({
 
 const tempPathMain = path.join(__dirname, 'temp');
 
-
+if (!fs.existsSync(tempPathMain)) {
+    fs.mkdirSync(tempPathMain, { recursive: true });
+    console.log(`Temp directory created at: ${tempPathMain}`);
+}
 
 async function processImage(fileBuffer, originalName, tempFolder, width) {
     try {
