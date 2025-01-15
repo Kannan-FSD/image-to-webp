@@ -48,11 +48,11 @@ This project is a simple React application for uploading images, converting them
 
    ```bash
    # Install frontend dependencies
-   cd client
+   cd app
    npm install
 
    # Install backend dependencies
-   cd ../server
+   cd ../api
    npm install
    ```
 
@@ -60,11 +60,11 @@ This project is a simple React application for uploading images, converting them
 
    ```bash
    # Start the backend server
-   cd server
+   cd api
    node index
 
    # Start the React development server
-   cd ../client
+   cd ../app
    npm start
    ```
 
@@ -81,13 +81,13 @@ This project is a simple React application for uploading images, converting them
 ```
 image-to-webp/
 |
-|-- client/           # Frontend React application
+|-- app/           # Frontend React application
 |   |-- public/       # Public assets
 |   |-- src/          # React components and styles
 |       |-- App.js    # Main React component
 |       |-- styles/   # CSS files (BEM methodology)
 |
-|-- server/           # Backend Node.js server
+|-- api/           # Backend Node.js server
 |   |-- temp/         # Temporary file storage
 |   |-- app.js        # Main server file
 |
